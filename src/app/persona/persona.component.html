@@ -1,0 +1,118 @@
+<h1 class="title-page">Persona</h1>
+
+<div style="text-align: center;">
+    <button (click)="realizarAccion()" class="button-consult">Consultar</button>
+</div>
+<br />
+<br />
+<br />
+<br />
+
+<div>
+    <table *ngIf="showMessage" style="width:100%;">
+        <tr>
+            <td style="color: white; background-color: #01345b;">id</td>
+            <td>{{persona.id}}</td>
+        </tr>
+        <tr>
+            <td style="color: white; background-color: #01345b;">documento.tipo_documento</td>
+            <td>{{persona.documento.tipo_documento}}</td>
+        </tr>
+        <tr>
+            <td style="color: white; background-color: #01345b;">documento.numero</td>
+            <td>{{persona.documento.numero}}</td>
+        </tr>
+        <tr>
+            <td style="color: white; background-color: #01345b;">documento.principal</td>
+            <td>{{persona.documento.principal}}</td>
+        </tr>
+        <tr>
+            <td style="color: white; background-color: #01345b;">none</td>
+            <td>{{persona.none}}</td>
+        </tr>
+        <tr>
+            <td style="color: white; background-color: #01345b;">apelido</td>
+            <td>{{persona.apelido}}</td>
+        </tr>
+        <tr>
+            <td style="color: white; background-color: #01345b;">outro_nome</td>
+            <td>{{persona.outro_nome}}</td>
+        </tr>
+        <tr>
+            <td style="color: white; background-color: #01345b;">email</td>
+            <td>{{persona.email}}</td>
+        </tr>
+        <tr>
+            <td style="color: white; background-color: #01345b;">data_nascimento</td>
+            <td>{{persona.data_nascimento}}</td>
+        </tr>
+        <tr>
+            <td style="color: white; background-color: #01345b;">nacionalidade</td>
+            <td>{{persona.nacionalidade}}</td>
+        </tr>
+        <tr>
+            <td style="color: white; background-color: #01345b;">genero</td>
+            <td>{{persona.genero}}</td>
+        </tr>
+        <tr>
+            <td style="color: white; background-color: #01345b;">identidade_genero</td>
+            <td>{{persona.identidade_genero}}</td>
+        </tr>
+        <tr>
+            <td style="color: white; background-color: #01345b;">orientacao_sexual</td>
+            <td>{{persona.orientacao_sexual}}</td>
+        </tr>
+        <tr>
+            <td style="color: white; background-color: #01345b;">falecido</td>
+            <td>{{persona.falecido}}</td>
+        </tr>
+        <tr>
+            <td style="color: white; background-color: #01345b;">dados_complementares.naturalidade</td>
+            <td>{{persona.dados_complementares.naturalidade}}</td>
+        </tr>
+        <tr>
+            <td style="color: white; background-color: #01345b;">dados_complementares.estado_civil</td>
+            <td>{{persona.dados_complementares.estado_civil}}</td>
+        </tr>
+        <tr>
+            <td style="color: white; background-color: #01345b;">dados_complementares.none_conjuge</td>
+            <td>{{persona.dados_complementares.none_conjuge}}</td>
+        </tr>
+        <tr>
+            <td style="color: white; background-color: #01345b;">dados_complementares.none_pai</td>
+            <td>{{persona.dados_complementares.none_pai}}</td>
+        </tr>
+        <tr>
+            <td style="color: white; background-color: #01345b;">dados_complementares.none_mae</td>
+            <td>{{persona.dados_complementares.none_mae}}</td>
+        </tr>
+        <tr>
+            <td style="color: white; background-color: #01345b;">dados_complementares.profissao</td>
+            <td>{{persona.dados_complementares.profissao}}</td>
+        </tr>
+        <tr>
+            <td style="color: white; background-color: #01345b;">dados_complementares.local_trabalho</td>
+            <td>{{persona.dados_complementares.local_trabalho}}</td>
+        </tr>
+        <tr>
+            <td style="color: white; background-color: #01345b;">dados_complementares.patente_militar</td>
+            <td>{{persona.dados_complementares.patente_militar}}</td>
+        </tr>
+        <tr>
+            <td style="color: white; background-color: #01345b;">dados_complementares.tipo_organizacao</td>
+            <td>{{persona.dados_complementares.tipo_organizacao}}</td>
+        </tr>
+        <tr>
+            <td style="color: white; background-color: #01345b;">dados_complementares.grupo_etnico</td>
+            <td>{{persona.dados_complementares.grupo_etnico}}</td>
+        </tr>
+        <tr>
+            <td style="color: white; background-color: #01345b;">dados_complementares.necessidades_especiais</td>
+            <td>{{persona.dados_complementares.necessidades_especiais}}</td>
+        </tr>
+        <tr>
+            <td style="color: white; background-color: #01345b;">dados_complementares.vulnerabilidades</td>
+            <td>{{persona.dados_complementares.vulnerabilidades}}</td>
+        </tr>
+    </table>
+</div>

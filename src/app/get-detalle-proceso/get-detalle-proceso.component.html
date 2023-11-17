@@ -1,0 +1,46 @@
+<h1 class="title-page">Detalle Proceso</h1>
+
+<div style="text-align: center;">
+    <button (click)="realizarAccion()" class="button-consult">Consultar</button>
+</div>
+<br />
+<br />
+<br />
+<br />
+
+<div>
+    <table *ngIf="showMessage" style="width:100%; ">
+        <tr>
+            <td style="color: white; background-color: #01345b;">id</td>
+            <td>{{proceso.id}}</td>
+        </tr>
+        <tr>
+            <td style="color: white; background-color: #01345b;">numero</td>
+            <td>{{proceso.numero}}</td>
+        </tr>
+        <tr>
+            <td style="color: white; background-color: #01345b;">outro_numero</td>
+            <td>{{proceso.outro_numero}}</td>
+        </tr>
+        <tr>
+            <td style="color: white; background-color: #01345b;">competencia</td>
+            <td>{{proceso.competencia}}</td>
+        </tr>
+        <tr>
+            <td style="color: white; background-color: #01345b;">clase_principal</td>
+            <td>{{proceso.clase_principal}}</td>
+        </tr>
+        <tr>
+            <td style="color: white; background-color: #01345b;">assunto_principal</td>
+            <td>{{proceso.assunto_principal}}</td>
+        </tr>
+        <tr>
+            <td style="color: white; background-color: #01345b;">assunto_complementar</td>
+            <td>{{proceso.assunto_complementar}}</td>
+        </tr>
+        <tr>
+            <td style="color: white; background-color: #01345b;">data_recibimento</td>
+            <td>{{proceso.data_recibimento}}</td>
+        </tr>
+    </table>
+</div>

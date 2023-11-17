@@ -1,0 +1,52 @@
+<h1 class="title-page">Personas</h1>
+
+<div style="text-align: center;">
+    <button (click)="realizarAccion()" class="button-consult">Consultar</button>
+</div>
+<br />
+<br />
+<br />
+<br />
+<table *ngIf="showMessage" style="width:100%; ">
+  <thead style="color: white; background-color: #01345b;">
+      <tr>
+        <th>id</th>
+        <th>documento.tipo_documento</th>
+        <th>documento.numero</th>
+        <th>documento.principal</th>
+        <th>nome</th>
+        <th>apelido</th>
+        <th>outro_nome</th>
+        <th>email</th>
+        <th>data_nascimiento</th>
+        <th>nacionalidade</th>
+        <th>genero</th>
+        <th>identidad_genero</th>
+        <th>orientacao_sexual</th>
+        <th>falecido</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of pagedItems | paginate: { itemsPerPage: pageSize, currentPage: currentPage, totalItems: totalItems }">
+            <td>{{ item.id }}</td>
+            <td>{{ item.documento.tipo_documento }}</td>
+            <td>{{ item.documento.numero }}</td>
+            <td>{{ item.documento.principal }}</td>
+            <td>{{ item.nome }}</td>
+            <td>{{ item.apelido }}</td>
+            <td>{{ item.outro_nome }}</td>
+            <td>{{ item.email }}</td>
+            <td>{{ item.data_nascimiento }}</td>
+            <td>{{ item.nacionalidade }}</td>
+            <td>{{ item.genero }}</td>
+            <td>{{ item.identidad_genero }}</td>
+            <td>{{ item.orientacao_sexual }}</td>
+            <td>{{ item.falecido }}</td>
+        </tr>
+    </tbody>
+  </table>
+  <pagination-controls
+      *ngIf="showMessage" 
+      previousLabel="{{previousName}}"
+      nextLabel="{{nextName}}"
+      style="text-align: center;" ></pagination-controls>

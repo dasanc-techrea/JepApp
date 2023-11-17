@@ -1,0 +1,40 @@
+<h1 class="title-page">Procesos Persona</h1>
+
+<div style="text-align: center;">
+    <button (click)="realizarAccion()" class="button-consult">Consultar</button>
+</div>
+<br />
+<br />
+<br />
+<br />
+<table *ngIf="showMessage" style="width:100%; ">
+  <thead style="color: white; background-color: #01345b;">
+      <tr>
+        <th>id</th>
+        <th>numero</th>
+        <th>outro_numero</th>
+        <th>competencia</th>
+        <th>clase_principal</th>
+        <th>assunto_principal</th>
+        <th>assunto_complementar</th>
+        <th>data_recibimento</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of pagedItems | paginate: { itemsPerPage: pageSize, currentPage: currentPage, totalItems: totalItems }">
+            <td>{{ item.id }}</td>
+            <td>{{ item.numero }}</td>
+            <td>{{ item.outro_numero }}</td>
+            <td>{{ item.competencia }}</td>
+            <td>{{ item.clase_principal }}</td>
+            <td>{{ item.assunto_principal }}</td>
+            <td>{{ item.assunto_complementar }}</td>
+            <td>{{ item.data_recibimento }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <pagination-controls
+  *ngIf="showMessage" 
+  previousLabel="{{previousName}}"
+  nextLabel="{{nextName}}"
+  style="text-align: center;" ></pagination-controls>
